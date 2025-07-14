@@ -1,0 +1,182 @@
+<html>
+<head>
+    <title>Lightning</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="light.css">
+<body>
+   
+        <div class="product-header">
+            <div class="header-container">
+                <div class="logo">
+                    <i class="fas fa-spa"></i>
+                    <h1>Serene <span>Spaces</span></h1>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="home.html#collections">Collection</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-icons">
+                  <div class="user-dropdown">
+  <i class="fas fa-user" id="user-icon"></i>
+  <div class="dropdown-menu" id="dropdown-menu">
+    <a href="edit-profile.html"><i class="fas fa-user-edit"></i> Edit Profile</a>
+    <a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </div>
+</div>
+
+                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-container">
+            <div class="breadcrumb">
+                <a href="home.html">Home</a>
+                <span>/</span>
+                <a href="home.html#collections">Collections</a>
+                <span>/</span>
+                <a href="light.html">Lighting</a>
+            </div>
+
+            <div class="section-title">
+                <h2>Lighting Collection</h2>
+                <p>Illuminate your space with our elegant lighting solutions</p>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="Images/light1.1.jpg"
+                            alt="Ceramic Table Lamp">
+                        <div class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ceramic Table Lamp</h3>
+                        <p>Handcrafted ceramic base with linen shade</p>
+                        <div class="product-price">$129.00</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="Images/light2.jpg"
+                            alt="Brass Pendant Light">
+                        <div class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Brass Pendant Light</h3>
+                        <p>Modern brass fixture with matte black details</p>
+                        <div class="product-price">$189.00</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="Images/light3.1.jpg"
+                            alt="Glass Floor Lamp">
+                        <div class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Glass Floor Lamp</h3>
+                        <p>Minimalist design with frosted glass giving a sleek design.</p>
+                        <div class="product-price">$249.00</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="Images/light4.1.jfif"
+                            alt="Rattan Wall Sconce">
+                        <div class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rattan Wall Sconce</h3>
+                        <p>Natural woven rattan with warm glow charm with soft, ambient lighting.</p>
+                        <div class="product-price">$89.00</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="Images/light5.1.jpg"
+                            alt="Crystal Chandelier">
+                        <div class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Crystal Chandelier</h3>
+                        <p>Elegant statement piece for dining rooms</p>
+                        <div class="product-price">$399.00</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Serene Spaces</h3>
+                    <p>Creating beautiful, functional spaces with thoughtfully designed interior pieces since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+  <div class="footer-col">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Serene Spaces. All rights reserved.
+                </div>
+        </footer>
+    </div>
+      <script>
+        // User Icon Dropdown
+const userIcon = document.getElementById("user-icon");
+const dropdownMenu = document.getElementById("dropdown-menu");
+
+userIcon.addEventListener("click", () => {
+    dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+});
+
+// Close dropdown when clicking outside
+document.addEventListener("click", (event) => {
+    if (!event.target.closest(".user-dropdown")) {
+        dropdownMenu.style.display = "none";
+    }
+});
+
+        </script>
+</body>
+</html>
