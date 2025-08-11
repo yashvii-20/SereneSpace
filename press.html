@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SereneSpaces | Press</title>
+    <link rel="stylesheet" href="css/press.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-spa"></i>
+                <h1>Serene <span>Spaces</span></h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html#collections">Collection</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+                <div class="user-dropdown">
+                    <i class="fas fa-user" id="user-icon"></i>
+                    <div class="dropdown-menu" id="dropdown-menu">
+                        <a href="edit-profile.html"><i class="fas fa-user-edit"></i> Edit Profile</a>
+                        <a href="LOGINN.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Press Header -->
+        <div class="press-header">
+            <h1>SereneSpaces in the Press</h1>
+            <p>Featured in publications that celebrate mindful living and intentional design</p>
+        </div>
+
+        <!-- Press Timeline -->
+        <div class="press-timeline">
+            <!-- Press Item 1 -->
+            <div class="press-item">
+                <div class="press-date">May 2024</div>
+                <div class="press-source">The Design Edit</div>
+                <h3 class="press-title">"SereneSpaces: Where Minimalism Meets Warmth"</h3>
+                <p class="press-excerpt">Exploring how SereneSpaces has mastered the art of creating cozy yet
+                    uncluttered environments that nourish the soul.</p>
+            </div>
+
+            <!-- Press Item 2 -->
+            <div class="press-item">
+                <div class="press-date">March 2024</div>
+                <div class="press-source">Eco Living Magazine</div>
+                <h3 class="press-title">"Sustainable Serenity: The Ethos Behind SereneSpaces"</h3>
+                <p class="press-excerpt">A profile on our commitment to environmentally responsible materials and
+                    fair-trade partnerships.</p>
+            </div>
+
+            <!-- Press Item 3 -->
+            <div class="press-item">
+                <div class="press-date">January 2024</div>
+                <div class="press-source">Mindful Homes Journal</div>
+                <h3 class="press-title">"5 SereneSpaces Pieces That Transform Any Room"</h3>
+                <p class="press-excerpt">Curators select standout items that bring instant calm to modern interiors.</p>
+            </div>
+        </div>
+
+        <!-- Press Assets -->
+        <div class="press-assets">
+            <h2 style="text-align: center; color: var(--primary-color); font-weight: 400; margin-bottom: 10px;">Press
+                Assets</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto; color: var(--text-color);">Download
+                high-resolution images and brand resources for editorial use.</p>
+
+            <div class="assets-grid">
+                <div class="asset-card">
+                    <img src="Images/logo.png" alt="SereneSpaces Logo">
+                    <h3>Brand Logo</h3>
+                    <p>Primary logo in PNG and SVG formats</p>
+                    <a href="Images/logo.png" class="download-link">Download</a>
+                </div>
+
+                <div class="asset-card">
+                    <img src="Images/c3.jpg" alt="Product Image">
+                    <h3>Product Images</h3>
+                    <p>High-res lifestyle and product photos</p>
+                    <a href="Images/c3.jpg" class="download-link">Download</a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Press Contact -->
+        <div class="press-contact">
+            <h2>For Press Inquiries</h2>
+            <p>Journalists and media professionals are welcome to contact us for interviews, assets, or collaborations.
+            </p>
+            <a href="mailto:press@serenespaces.com" class="contact-email">press@serenespaces.com</a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Serene Spaces</h3>
+                <p>Creating beautiful, functional spaces with thoughtfully designed interior pieces since 2015.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+
+            <div class="footer-col">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="ourstory.html">Our Story</a></li>
+                    <li><a href="sus.html">Sustainability</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Serene Spaces. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // User dropdown functionality// User Icon Dropdown
+        const userIcon = document.getElementById("user-icon");
+        const dropdownMenu = document.getElementById("dropdown-menu");
+
+        userIcon.addEventListener("click", () => {
+            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", (event) => {
+            if (!event.target.closest(".user-dropdown")) {
+                dropdownMenu.style.display = "none";
+            }
+        });
+
+    </script>
+</body>
+
+</html>

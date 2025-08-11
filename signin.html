@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene Space | Create Account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5A716A;   /* Serene green-gray */
+            --secondary: #C4B6A8;  /* Warm beige */
+            --accent: #E8E3D8;     /* Soft cream */
+            --text: #2D2D2D;       /* Dark gray */
+            --light: #F8F6F2;      /* Warm white */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: radial-gradient(circle at 90% 10%, rgba(232, 227, 216, 0.3) 0%, rgba(248, 246, 242, 1) 80%);
+        }
+
+        .signup-card {
+            width: 90%;
+            max-width: 900px;
+            display: flex;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(90, 113, 106, 0.1);
+            position: relative;
+        }
+
+        .signup-card::before {
+            content: "";
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            width: 150px;
+            height: 150px;
+            background: var(--secondary);
+            border-radius: 50%;
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        .signup-card::after {
+            content: "";
+            position: absolute;
+            bottom: -40px;
+            right: -40px;
+            width: 180px;
+            height: 180px;
+            background: var(--primary);
+            border-radius: 50%;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .signup-image {
+            flex: 1;
+            background-image: url('Images/c8.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .signup-form {
+            flex: 1;
+            padding: 3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .logo::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40%;
+            height: 2px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+
+        .signup-form h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+
+        .signup-form p {
+            margin-bottom: 2rem;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            border: none;
+            border-bottom: 2px solid var(--secondary);
+            background: transparent;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-bottom-color: var(--primary);
+        }
+
+        .form-group i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary);
+            opacity: 0.7;
+        }
+
+        .signup-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(90, 113, 106, 0.3);
+            margin-top: 1rem;
+        }
+
+        .signup-btn:hover {
+            background: #4A6059;
+            transform: translateY(-2px);
+            box-shadow: 0 7px 20px rgba(90, 113, 106, 0.4);
+        }
+
+        .login-link {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .login-link a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dashed var(--primary);
+            transition: all 0.3s;
+        }
+
+        .login-link a:hover {
+            border-bottom: 1px solid var(--primary);
+        }
+
+        .terms {
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+
+        .terms a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .signup-card {
+                flex-direction: column;
+            }
+            .signup-image {
+                height: 200px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="signup-card">
+        <div class="signup-image"></div>
+        <div class="signup-form">
+            <div class="logo">Serene Space</div>
+            <h2>Create Your Account</h2>
+            <p>Join our community of design enthusiasts and explore curated interiors.</p>
+            <form action="home.html" method="get">
+                <div class="form-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+            <div class="terms">
+                By signing up, you agree to our <a href="T&C.html">Terms & Conditions</a> and <a href="P&P.html">Privacy Policy</a>.
+            </div>
+            <div class="login-link">
+                Already have an account? <a href="LOGINN.html">Log In</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

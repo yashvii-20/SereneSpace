@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability | Serene Spaces</title>
+    <link rel="stylesheet" href="css/sus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-spa"></i>
+                <h1>Serene <span>Spaces</span></h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html#collections">Collection</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+                <div class="user-dropdown">
+                    <i class="fas fa-user" id="user-icon"></i>
+                    <div class="dropdown-menu" id="dropdown-menu">
+                        <a href="edit-profile.html"><i class="fas fa-user-edit"></i> Edit Profile</a>
+                        <a href="LOGINN.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                    <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Sustainability at Serene Spaces</h1>
+            <p>We believe in creating a harmonious balance between mindful living and environmental responsibility.</p>
+        </div>
+    </section>
+
+    <!-- Sustainability Content -->
+    <section class="sustainability-content">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Sustainable Practices</h2>
+                <p>Our commitment to sustainability is woven into every aspect of our business—from sourcing
+                    eco-friendly materials to reducing waste and supporting ethical practices.</p>
+            </div>
+
+            <div class="practices-grid">
+                <div class="practice-card">
+                    <h3><i class="fas fa-recycle"></i> Eco-Conscious Materials</h3>
+                    <p>We prioritize natural, organic, and recycled materials in our products, ensuring minimal
+                        environmental impact without compromising quality or aesthetics.</p>
+                </div>
+
+                <div class="practice-card">
+                    <h3><i class="fas fa-seedling"></i> Ethical Sourcing</h3>
+                    <p>Our partners and suppliers uphold fair labor practices and sustainable production methods,
+                        supporting communities and preserving ecosystems.</p>
+                </div>
+
+                <div class="practice-card">
+                    <h3><i class="fas fa-box-open"></i> Minimal & Recyclable Packaging</h3>
+                    <p>We use biodegradable, compostable, or recyclable packaging to reduce waste. Where possible, we
+                        eliminate unnecessary plastics and opt for reusable alternatives.</p>
+                </div>
+
+                <div class="practice-card">
+                    <h3><i class="fas fa-globe-americas"></i> Carbon-Neutral Shipping</h3>
+                    <p>We offset our carbon footprint by partnering with eco-friendly shipping providers and investing
+                        in reforestation projects.</p>
+                </div>
+
+                <div class="practice-card">
+                    <h3><i class="fas fa-sync-alt"></i>Circular Economy</h3>
+                    <p>We encourage mindful consumption by offering durable, timeless products and exploring take-back
+                        programs for recycling or upcycling.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="goals-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Future Goals</h2>
+                    <p>We're continuously working to improve our sustainability efforts and reduce our environmental
+                        impact.</p>
+                </div>
+
+                <ul class="goals-list">
+                    <li><strong>Zero-Waste Operations</strong> – Striving to eliminate landfill waste from our
+                        production and packaging processes.</li>
+                    <li><strong>100% Renewable Energy</strong> – Transitioning to fully sustainable energy sources for
+                        our facilities.</li>
+                    <li><strong>Community Impact</strong> – Supporting environmental initiatives and education programs.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="cta-section">
+                <h2>Join Us in Making a Difference</h2>
+                <p>Every purchase you make supports a greener future. Together, we can create serene spaces—for your
+                    home and our planet.</p>
+                <p style="font-style: italic; color: #4a6f6a; margin-top: 20px;"><i class="fas fa-leaf"></i> Thank you for being part of our
+                    sustainable journey.</p>
+                <a href="home.html#collections" class="cta-button">Shop Sustainably</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Serene Spaces</h3>
+                <p>Creating beautiful, functional spaces with thoughtfully designed interior pieces since 2015.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+
+            <div class="footer-col">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="ourstory.html">Our Story</a></li>
+                    <li><a href="sus.html">Sustainability</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Serene Spaces. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const userIcon = document.getElementById("user-icon");
+        const dropdownMenu = document.getElementById("dropdown-menu");
+
+        userIcon.addEventListener("click", function (event) {
+            event.stopPropagation();
+            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+        });
+
+        // Close the dropdown if clicking outside
+        window.addEventListener("click", function () {
+            dropdownMenu.style.display = "none";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+ :root {
+            --clay: #D4B483;       /* Warm terracotta */
+            --linen: #F5F1E6;      /* Soft linen */
+            --slate: #3A506B;      /* Deep slate */
+            --mist: #D6E3E9;      /* Airy blue mist */
+            --stone: #A4B8C4;      /* Cool stone */
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--linen);
+            color: var(--slate);
+            margin: 0;
+            line-height: 1.8;
+            background-image: 
+                radial-gradient(circle at 90% 10%, var(--mist) 0%, transparent 25%),
+                radial-gradient(circle at 10% 90%, rgba(212, 180, 131, 0.1) 0%, transparent 25%);
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 30px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: center;
+        }
+         .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--dark-color);
+        }
+
+        .logo span {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        
+        .brand-mark {
+            width: 60px;
+            height: 60px;
+            background: var(--clay);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
+            font-weight: 300;
+        }
+        
+        h1 {
+            font-weight: 400;
+            font-size: 2.8rem;
+            margin: 10px 0;
+            color: var(--slate);
+            letter-spacing: -0.5px;
+        }
+        
+        .subtitle {
+            color: var(--stone);
+            font-weight: 300;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        .last-updated {
+            text-align: right;
+            color: var(--stone);
+            font-style: italic;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+        
+        .terms-content {
+            background: white;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 5px 25px rgba(58, 80, 107, 0.05);
+        }
+        
+        h2 {
+            font-weight: 500;
+            color: var(--slate);
+            margin: 40px 0 20px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        h2:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 12px;
+            height: 2px;
+            width: 15px;
+            background: var(--clay);
+        }
+        
+        h3 {
+            font-weight: 500;
+            color: var(--slate);
+            margin: 30px 0 15px;
+        }
+        
+        .highlight {
+            background: var(--linen);
+            padding: 25px;
+            border-left: 3px solid var(--clay);
+            margin: 30px 0;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            color: var(--stone);
+            font-size: 0.9rem;
+        }
+        
+        .footer-logo {
+            width: 40px;
+            height: 40px;
+            background: var(--clay);
+            margin: 0 auto 15px;
+            border-radius: 50%;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .terms-content {
+                padding: 30px;
+            }
+        }

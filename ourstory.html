@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | SereneSpaces</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/ourstory.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <i class="fas fa-spa"></i>
+                <h1>Serene <span>Spaces</span></h1>
+            </div>
+
+            <div class="nav-links">
+                <a href="home.html">Home </a>
+                <a href="home.html#collections">Collections</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="header-icons">
+                    <div class="user-dropdown">
+                        <i class="fas fa-user" id="user-icon"></i>
+                        <div class="dropdown-menu" id="dropdown-menu">
+                            <a href="edit-profile.html"><i class="fas fa-user-edit"></i> Edit Profile</a>
+                            <a href="LOGINN.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                        <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                    </div>
+                </div>
+    </nav>
+    <div class="container">
+        <header class="page-header">
+
+            <h1>Our Story</h1>
+            <p>Discover the journey behind SereneSpaces and our passion for creating peaceful, beautiful homes.</p>
+        </header>
+
+        <section class="story-content">
+            <div class="story-image">
+                <img src="Images/c3.jpg" alt="Serene living space with natural elements">
+            </div>
+            <div class="story-text">
+                <h2>SereneSpaces Since 2024 </h2>
+                <p>At SereneSpaces, we believe that your home should be a sanctuary—a place where tranquility meets
+                    style. Our journey began with a simple vision: to curate beautiful, high-quality home decor and
+                    furnishings that inspire peace, comfort, and mindful living.</p>
+                <p>Founded in 2024, SereneSpaces was born out of a passion for creating harmonious living environments.
+                    What started as a small collection of carefully selected pieces has grown into a destination for
+                    those seeking to infuse their spaces with serenity and sophistication.</p>
+                <p>Whether you're looking to refresh a single corner or transform your entire space, we're here to help
+                    you craft a home that reflects your personal oasis.</p>
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+            <h2>Why Choose SereneSpaces?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Thoughtfully Curated</h3>
+                    <p>Every piece in our collection is handpicked for its design, quality, and ability to evoke calm
+                        and comfort.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                    <h3>Sustainable & Ethical</h3>
+                    <p>We prioritize eco-friendly materials and ethical sourcing to protect our planet and support fair
+                        practices.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Customer-Centric</h3>
+                    <p>From seamless shopping to personalized styling tips, your satisfaction is our priority.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="closing-statement">
+            <p>Thank you for being part of our story. Together, let's create spaces that nurture the soul and celebrate
+                the beauty of mindful living.</p>
+            <p>Welcome to SereneSpaces—where every room tells a story of peace.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Serene Spaces</h3>
+                <p>Creating beautiful, functional spaces with thoughtfully designed interior pieces since 2015.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+
+            <div class="footer-col">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="ourstory.html">Our Story</a></li>
+                    <li><a href="sus.html">Sustainability</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2023 Serene Spaces. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    const userIcon = document.getElementById("user-icon");
+    const dropdownMenu = document.getElementById("dropdown-menu");
+
+    userIcon.addEventListener("click", function (event) {
+        event.stopPropagation();
+        dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+    });
+
+    // Close the dropdown if clicking outside
+    window.addEventListener("click", function () {
+        dropdownMenu.style.display = "none";
+    });
+</script>
+
+
+</html>
