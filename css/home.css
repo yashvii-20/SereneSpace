@@ -80,9 +80,33 @@ html {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1400px;
-            margin: 0 auto;
+            /* max-width: 1400px;
+            margin: 0 auto; */
         }
+        /* Push nav links to the left of icons */
+.nav-links {
+    margin-left: auto;    /* pushes nav away from logo */
+    margin-right: 2rem;   /* gap between nav and icons */
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 2rem;   /* spacing between Home, Collection, etc */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: var(--primary-color);
+}
 
         .logo {
             display: flex;
@@ -106,7 +130,7 @@ html {
             color: var(--primary-color);
         }
 
-        nav ul {
+        /* nav ul {
             display: flex;
             list-style: none;
         }
@@ -124,23 +148,28 @@ html {
 
         nav ul li a:hover {
             color: var(--primary-color);
-        }
+        } */
 
         .header-icons {
             display: flex;
-            align-items: center;   
+            align-items: center; 
+             gap: 1.5rem; /* spacing between user, bag, heart */  
         }
 
         .header-icons a {
             color: var(--dark-color);
             margin-left: 1.5rem;
-            font-size: 1.2rem;
-            transition: color 0.3s;
+            font-size: 1.3rem;
+            transition: color 0.3s, transform 0.2s ease;
         }
+       
+        .header-icons a .fa-shopping-bag:hover {
+    color: var(--primary-color); }
 
-        .header-icons a:hover {
-            color: var(--primary-color);
-        }
+           .header-icons a .fa-heart:hover {
+    color: #ff4d4d;  /* Red for wishlist */
+} 
+
 
         /* Hero Carousel */
         .carousel {
@@ -527,7 +556,6 @@ html {
         .add-to-cart:hover {
             background-color: #5a7a6d;
         }
-
         /* Responsive Styles */
         @media (max-width: 992px) {
             .carousel-content h2 {

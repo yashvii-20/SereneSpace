@@ -34,6 +34,7 @@
                 </div>
 
                 <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                  <a href="wishlist.html"><i class="fas fa-heart"></i></a>
             </div>
         </div>
     </div>
@@ -63,8 +64,8 @@
                 <div class="product-info">
                     <h3>Ceramic Table Lamp</h3>
                     <p>Handcrafted ceramic base with linen shade</p>
-                    <div class="product-price">$129.00</div>
-                    <button class="add-to-cart" data-title="Ceramic Table Lamp" data-price="129"
+                    <div class="product-price">₹1290.00</div>
+                    <button class="add-to-cart" data-title="Ceramic Table Lamp" data-price="1290"
                         data-image="Images/light1.1.jpg">
                         Add to Cart
                     </button>
@@ -82,8 +83,11 @@
                 <div class="product-info">
                     <h3>Brass Pendant Light</h3>
                     <p>Modern brass fixture with matte black details</p>
-                    <div class="product-price">$189.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹1890.00</div>
+                    <button class="add-to-cart" data-title="Brass Pendant Light" data-price="1890"
+                        data-image="Images/light2.jpg"> 
+                        Add to Cart
+                    </button>
                 </div>
             </div>
 
@@ -97,8 +101,11 @@
                 <div class="product-info">
                     <h3>Glass Floor Lamp</h3>
                     <p>Minimalist design with frosted glass giving a sleek design.</p>
-                    <div class="product-price">$249.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹2490.00</div>
+                    <button class="add-to-cart" data-title="Glass Floor Lamp" data-price="2490"
+                        data-image="Images/light3.1.jpg">
+                        Add to Cart
+                    </button>
                 </div>
             </div>
 
@@ -112,8 +119,11 @@
                 <div class="product-info">
                     <h3>Rattan Wall Sconce</h3>
                     <p>Natural woven rattan with warm glow charm with soft, ambient lighting.</p>
-                    <div class="product-price">$89.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹890.00</div>
+                    <button class="add-to-cart" data-title="Rattan Wall Sconce" data-price="890"
+                        data-image="Images/light4.1.jpg">
+                        Add to Cart
+                    </button>
                 </div>
             </div>
 
@@ -127,8 +137,11 @@
                 <div class="product-info">
                     <h3>Crystal Chandelier</h3>
                     <p>Elegant statement piece for dining rooms</p>
-                    <div class="product-price">$399.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹3990.00</div>
+                    <button class="add-to-cart"data-title="Crystal Chandelier" data-price="3990"
+                        data-image="Images/light5.1.jpg">
+                        Add to Cart
+                    </button>
                 </div>
             </div>
         </div>
@@ -162,43 +175,7 @@
         </div>
     </footer>
     </div>
-    <script>
-        // User Icon Dropdown
-        const userIcon = document.getElementById("user-icon");
-        const dropdownMenu = document.getElementById("dropdown-menu");
-
-        userIcon.addEventListener("click", () => {
-            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-        });
-
-        // Close dropdown when clicking outside
-        document.addEventListener("click", (event) => {
-            if (!event.target.closest(".user-dropdown")) {
-                dropdownMenu.style.display = "none";
-            }
-        });
-        // add to cart/
-
-        document.querySelectorAll('.add-to-cart').forEach(button => {
-            button.addEventListener('click', function () {
-                const title = this.getAttribute('data-title');
-                const price = this.getAttribute('data-price');
-                const image = this.getAttribute('data-image');
-
-                if (!title || !price || !image) return;
-
-                const item = { title, price, image };
-                let cart = JSON.parse(localStorage.getItem('cart')) || [];
-                cart.push(item);
-                localStorage.setItem('cart', JSON.stringify(cart));
-                alert(`${title} added to cart`);
-            });
-        });
-
-
-
-
-    </script>
+    <script src="light.js"> </script>
 </body>
 
 </html>

@@ -145,7 +145,11 @@
         .header-icons a:hover {
             color: var(--primary-color);
         }
-        
+          .header-icons a .fa-shopping-bag:hover {
+    color: var(--primary-color); }
+           .header-icons a .fa-heart:hover {
+    color: #ff4d4d;  /* Red for wishlist */
+}
         /* Hero Section */
         .hero {
             background-color: #e8f0ee;

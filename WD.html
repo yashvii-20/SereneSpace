@@ -33,7 +33,8 @@
                     </div>
                 </div>
 
-                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                  <a href="wishlist.html"><i class="fas fa-heart"></i></a>
             </div>
         </div>
     </div>
@@ -63,8 +64,9 @@
                 <div class="product-info">
                     <h3>Abstract Canvas Art</h3>
                     <p>Large format abstract painting on canvas</p>
-                    <div class="product-price">$199.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹1199.00</div>
+                    <button class="add-to-cart"data-title="Abstract Canvas Art" data-price="1199"
+                        data-image="Images/wd1.jpg">Add to Cart</button>
                 </div>
             </div>
 
@@ -78,8 +80,9 @@
                 <div class="product-info">
                     <h3>Mirror Set</h3>
                     <p>Set of 3 round mirrors in varying sizes</p>
-                    <div class="product-price">$149.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹1149.00</div>
+                    <button class="add-to-cart"data-title="Mirror Set" data-price="1149"
+                        data-image="Images/wd2.jpg">Add to Cart</button>
                 </div>
             </div>
 
@@ -93,8 +96,9 @@
                 <div class="product-info">
                     <h3>Floating Shelves</h3>
                     <p>Set of 3 minimalist wooden shelves</p>
-                    <div class="product-price">$89.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹899.00</div>
+                    <button class="add-to-cart"data-title="Floating Shelves" data-price="899"
+                        data-image="Images/wd3.jpg">Add to Cart</button>
                 </div>
             </div>
 
@@ -108,8 +112,9 @@
                 <div class="product-info">
                     <h3>Botanical Prints</h3>
                     <p>Set of 3 framed botanical illustrations</p>
-                    <div class="product-price">$129.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹1129.00</div>
+                    <button class="add-to-cart"data-title="Botanical Prints" data-price="1129"
+                        data-image="Images/wd4.jfif">Add to Cart</button>
                 </div>
             </div>
 
@@ -123,8 +128,9 @@
                 <div class="product-info">
                     <h3>Metal Wall Sculpture</h3>
                     <p>Abstract geometric metal wall art</p>
-                    <div class="product-price">$179.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹1179.00</div>
+                    <button class="add-to-cart"data-title="Metal Wall Sculpture" data-price="1179"
+                        data-image="Images/wd5.jpg">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -157,23 +163,7 @@
         </div>
     </footer>
     </div>
-    <script>
-        // User Icon Dropdown
-        const userIcon = document.getElementById("user-icon");
-        const dropdownMenu = document.getElementById("dropdown-menu");
-
-        userIcon.addEventListener("click", () => {
-            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-        });
-
-        // Close dropdown when clicking outside
-        document.addEventListener("click", (event) => {
-            if (!event.target.closest(".user-dropdown")) {
-                dropdownMenu.style.display = "none";
-            }
-        });
-
-    </script>
+    <script src="light.js"> </script>
 </body>
 
 </html>

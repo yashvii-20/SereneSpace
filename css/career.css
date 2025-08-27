@@ -140,12 +140,16 @@
         .header-icons a:hover {
             color: var(--primary-color);
         }
+          .header-icons a .fa-shopping-bag:hover {
+    color: var(--primary-color); }
+           .header-icons a .fa-heart:hover {
+    color: #ff4d4d;  /* Red for wishlist */
+}
         
         /* Hero - Room Mockup */
         .design-hero {
             height: 90vh;
-            background: linear-gradient(rgba(107, 142, 127, 0.2), rgba(107, 142, 127, 0.2)), 
-                        url('showroom-bg.jpg') center/cover;
+           
             display: flex;
             align-items: center;
             position: relative;

@@ -34,7 +34,8 @@
                     </div>
                 </div>
 
-                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                  <a href="wishlist.html"><i class="fas fa-heart"></i></a>
 
             </div>
         </div>
@@ -65,8 +66,9 @@
                 <div class="product-info">
                     <h3>Linen Throw Blanket</h3>
                     <p>Soft, breathable linen in neutral tones</p>
-                    <div class="product-price">$79.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹790.00</div>
+                    <button class="add-to-cart"  data-title="Linen Throw Blanket" data-price="790"
+                        data-image="Images/textile1.jpg">Add to Cart</button>
                 </div>
             </div>
 
@@ -80,8 +82,9 @@
                 <div class="product-info">
                     <h3>Velvet Pillow Covers</h3>
                     <p>Set of 2 luxurious velvet pillow covers</p>
-                    <div class="product-price">$59.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹590.00</div>
+                    <button class="add-to-cart"data-title="Velvet Pillow Covers" data-price="590"
+                        data-image="Images/textile2.jpg">Add to Cart</button>
                 </div>
             </div>
 
@@ -95,8 +98,9 @@
                 <div class="product-info">
                     <h3>Wool Area Rug</h3>
                     <p>Handwoven wool rug with geometric pattern</p>
-                    <div class="product-price">$299.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹2990.00</div>
+                    <button class="add-to-cart" data-title="Wool Area Rug" data-price="2990"
+                        data-image="Images/textile3.1.jpg">Add to Cart</button>
                 </div>
             </div>
 
@@ -110,8 +114,9 @@
                 <div class="product-info">
                     <h3>Silk Curtains</h3>
                     <p>Elegant sheer silk curtains for your windows</p>
-                    <div class="product-price">$129.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹1290.00</div>
+                    <button class="add-to-cart" data-title="Silk Curtains" data-price="1290"
+                        data-image="Images/textile4.1.jpg">Add to Cart</button>
                 </div>
             </div>
 
@@ -125,8 +130,9 @@
                 <div class="product-info">
                     <h3>Cotton Table Runner</h3>
                     <p>Hand-block printed cotton table runner</p>
-                    <div class="product-price">$45.00</div>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-price">₹450.00</div>
+                    <button class="add-to-cart"data-title="Cotton Table Runner" data-price="450"
+                        data-image="Images/textile5.jpg">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -160,23 +166,7 @@
         </div>
     </footer>
     </div>
-    <script>
-        // User Icon Dropdown
-        const userIcon = document.getElementById("user-icon");
-        const dropdownMenu = document.getElementById("dropdown-menu");
-
-        userIcon.addEventListener("click", () => {
-            dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
-        });
-
-        // Close dropdown when clicking outside
-        document.addEventListener("click", (event) => {
-            if (!event.target.closest(".user-dropdown")) {
-                dropdownMenu.style.display = "none";
-            }
-        });
-
-    </script>
+    <script src="light.js"></script>
 </body>
 
 </html>
